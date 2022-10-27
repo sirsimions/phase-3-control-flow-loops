@@ -21,29 +21,18 @@ def fizzbuzz(num)
   end
 end
 
-def fizzbuzz_printer(item)
-  # your code here
-  (1..100).each do |item|
-    if item % 3 == 0 && item % 5 == 0
-      "FizzBuzz"
-    elsif item % 3 == 0
-      "Fizz"
-    elsif item % 5 == 0
-      "Buzz"
-    else
-      item
+def fizzbuzz_printer
+  (1..100).each do |num|
+    puts fizzbuzz(num)
     end
+
 end
 
 def reverse_string(str)
-  # your code here
-  reversed_str = ""
-  str.length.times do |i|
-    reversed_str = str[i] + reversed_str
-    if reversed_str.length == str.length
-      puts "#{reversed_str}"
-    end
-  end
-end
-  
+reversed_str = ""
+str.length.times do |i|
+reversed_str = str[i] + reversed_str
 
+end 
+reversed_str
+end
